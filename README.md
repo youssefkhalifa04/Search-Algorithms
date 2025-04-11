@@ -1,21 +1,68 @@
-🔍 Uninformed (Blind) Search
-No domain knowledge used.
+Voici un exemple de fichier `README.md` en français pour ton dépôt GitHub [Search-Algorithms](https://github.com/youssefkhalifa04/Search-Algorithms.git). Ce fichier est conçu pour être clair, pédagogique et adapté à un public francophone :
 
-BFS (Breadth-First Search): Explores level by level. ✅ Complete & optimal (if costs are equal).
+---
 
-DFS (Depth-First Search): Goes deep first. ❌ Not optimal.
+```markdown
+# 🔍 Algorithmes de Recherche en Python
 
-DLS (Depth-Limited Search): DFS with depth limit.
+Ce dépôt contient des implémentations en Python de plusieurs algorithmes de recherche classiques, utilisés en intelligence artificielle et en théorie des graphes.
 
-IDS (Iterative Deepening Search): DFS + BFS benefits. ✅ Complete & optimal.
+## 📁 Structure du projet
 
-UCS (Uniform Cost Search): Expands node with lowest cost. ✅ Optimal.
+```
+.
+├── README.md
+├── tp1.py
+└── tp2.py
+```
 
-🧠 Informed (Heuristic) Search
-Uses domain knowledge.
+- **tp1.py** : Implémentations des algorithmes de recherche non informés.
+- **tp2.py** : Implémentations des algorithmes de recherche informés.
 
-Greedy Best-First Search: Picks node with lowest estimated cost to goal (h(n)). ❌ Not always optimal.
+## 🧭 Algorithmes implémentés
 
-A*: Uses actual + estimated cost (f(n) = g(n) + h(n)). ✅ Complete & optimal (if heuristic is good).
+### 🔹 Recherche non informée (sans heuristique)
 
-IDA*: Memory-efficient version of A*.
+- **BFS (Breadth-First Search)** : Explore les nœuds niveau par niveau.
+  - ✅ Complet
+  - ✅ Optimal si tous les coûts sont égaux
+
+- **DFS (Depth-First Search)** : Explore en profondeur avant de revenir en arrière.
+  - ❌ Pas toujours optimal
+  - ❌ Peut ne pas être complet dans certains cas
+
+- **DLS (Depth-Limited Search)** : Variante de DFS avec une profondeur maximale définie.
+
+- **IDS (Iterative Deepening Search)** : Combine les avantages de DFS et BFS.
+  - ✅ Complet
+  - ✅ Optimal si tous les coûts sont égaux
+
+- **UCS (Uniform Cost Search)** : Sélectionne le nœud avec le coût cumulatif le plus faible.
+  - ✅ Complet
+  - ✅ Optimal
+
+### 🔹 Recherche informée (avec heuristique)
+
+- **Greedy Best-First Search** : Sélectionne le nœud avec la plus petite estimation de coût jusqu'à l'objectif (h(n)).
+  - ❌ Pas toujours optimal
+  - ❌ Peut ne pas être complet
+
+- **A\*** : Combine le coût réel et l'estimation heuristique (f(n) = g(n) + h(n)).
+  - ✅ Complet
+  - ✅ Optimal si l'heuristique est admissible
+
+- **IDA\*** : Variante d'A\* utilisant moins de mémoire, basée sur des seuils de coût.
+
+## 🛠️ Exécution
+
+Assurez-vous d'avoir Python 3 installé. Pour exécuter les scripts :
+
+```bash
+python tp1.py  # Pour les algorithmes non informés
+python tp2.py  # Pour les algorithmes informés
+```
+
+## 🤝 Contributions
+
+Les contributions sont les bienvenues ! N'hésitez pas à proposer des améliorations, corriger des bugs ou ajouter de nouveaux algorithmes via des pull requests.
+
