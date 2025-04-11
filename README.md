@@ -1,8 +1,4 @@
-Voici un exemple de fichier `README.md` en français pour ton dépôt GitHub [Search-Algorithms](https://github.com/youssefkhalifa04/Search-Algorithms.git). Ce fichier est conçu pour être clair, pédagogique et adapté à un public francophone :
 
----
-
-```markdown
 # 🔍 Algorithmes de Recherche en Python
 
 Ce dépôt contient des implémentations en Python de plusieurs algorithmes de recherche classiques, utilisés en intelligence artificielle et en théorie des graphes.
